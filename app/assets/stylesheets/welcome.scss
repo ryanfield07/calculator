@@ -1,0 +1,267 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/*Nav and Header*/
+
+.header {
+  text-align: center;
+  margin-top: 0px;
+}
+
+#experis {
+  font-size: 70px;
+  color: orange;
+  padding: 0px 20px 0px 20px;
+}
+
+.experis {
+  text-align: center;
+  padding-bottom: 10px;
+  margin-top: -30px;
+  border-bottom: 4px solid #70aaf4;
+}
+
+#title {
+  border: 4px solid #70aaf4;
+  font-size: 80px;
+  color: #70aaf4;
+  padding-left: 4px;
+}
+
+#t {
+  border-bottom: 2px solid #70aaf4;
+}
+
+.nav .btn {
+  text-decoration: none;
+  background-color: white;
+  color: orange;
+  border: 2px solid #70aaf4;
+  font-weight: 600;
+}
+
+.nav .btn:hover {
+  text-decoration: none;
+  background-color: orange;
+  color: #70aaf4;
+  border: 2px solid orange;
+  font-weight: 600;
+}
+
+.nav .btn:visited {
+  text-decoration: none;
+  background-color: white;
+  color: orange;
+  border: 2px solid #70aaf4;
+  font-weight: 600;
+}
+
+#act {
+  background-color: none;
+  color: #70aaf4;
+  border: 2px solid orange;
+  font-weight: 600;
+  font-size: 120%;
+}
+
+.dropdown-menu li {
+  border: none;
+  background-color: white;
+  color: black;
+}
+
+.mainLinks {
+  text-decoration: none;
+}
+
+ul.dropdown-menu li a {
+  color: #70aaf4;
+}
+
+ul.dropdown-menu li a:hover {
+  color: orange;
+}
+
+
+/*Submittal Requirements*/
+
+.submit {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.submittals th {
+  text-align: center;
+  color: #70aaf4;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.submittals .sub1 {
+  color: orange;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.submittals .sub2 {
+  color: orange;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.submittals .sub3 {
+  color: orange;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+}
+
+/*Calculator Main*/
+
+.key ul {
+  list-style: none;
+  display: flex;
+}
+
+.key li {
+  border: 2px solid #70aaf4;
+  border-radius: 4px;
+  padding: 5px;
+  margin: 5px 2px 5px 0px;
+}
+
+.key li:nth-child(1) {
+  background-color: #000;
+  font-weight: 600;
+  color: #70aaf4;
+  text-decoration: underline;
+}
+
+.key li:nth-child(2) {
+  background-color: #ffffff;
+  font-weight: 600;
+  color: #000;
+  text-decoration: underline;
+}
+
+.key li:nth-child(3) {
+  background-color: #70aaf4;
+  font-weight: 600;
+  color: #000;
+  text-decoration: none;
+}
+
+.key li:nth-child(4) {
+  background-color: #ffa500;
+  font-weight: 600;
+  color: #000;
+  text-decoration: none;
+}
+
+.tiles {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.tiles .title {
+  text-decoration: underline;
+}
+
+.tiles .input {
+  background-color: #70aaf4;
+  color: white;
+  text-decoration: none;
+}
+
+.tiles .result {
+  background-color: orange;
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.tiles .result output {
+  color: #000;
+}
+
+.br2pr tr, .pr2br tr, .spread tr{
+  text-align: center;
+}
+
+.br2pr th, .pr2br th, .spread th{
+  font-size: 18px;
+  color: black;
+}
+
+.br2pr div, .pr2br div, .spread div{
+  text-align: center;
+  font-size: 25px;
+  color: #000;
+  border-bottom: 2px solid orange;
+}
+
+.br2pr table, .pr2br table, .spread table {
+  border: 4px solid #70aaf4;
+  margin: 10px;
+}
+
+.br2pr td, .pr2br td, .spread td, .help td {
+  border: 2px solid #70aaf4;
+  width: 100px;
+  height: 30px;
+  font-size: 16px;
+  color: #000;
+}
+
+/*Contact*/
+
+.contact {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.contact table th {
+  color: orange;
+  font-size: 18px;
+}
+
+.contact table td {
+  border: 2px solid #70aaf4;
+  padding: 3px;
+  font-weight: 500;
+}
+
+.contact table td a {
+  color: black;
+  text-decoration: none;
+}
+
+/*Footer*/
+
+.footer { 
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #f5f5f5;
+  color: #c6c6c6;
+}
+
+.footer div {
+  padding-left: 8px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #c6c6c6;
+}
+
+.footer a:visited {
+  text-decoration: none;
+  color: #c6c6c6;
+}

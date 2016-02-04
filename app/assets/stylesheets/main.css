@@ -1,0 +1,163 @@
+/*
+#home {
+  background-color: white;
+  color: navy;
+}
+
+.titleMain h2{
+    text-align: center;
+    font-size: 50px;
+    padding-bottom: 30px;
+    margin-bottom: 40px;
+    border-bottom: 4px solid navy;
+}
+
+.titleMain h1 {
+    margin-bottom: -20px;
+    text-align: center;
+    font-size: 55px;
+    font-weight: 400;
+}
+
+
+.subTitle {
+  border: 2px solid navy;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: ;
+}
+
+.key {
+  margin: -30px 0px -10px 0px;
+  border-bottom: 4px solid navy;
+  display: flex;
+  justify-content: space-around;
+}
+
+#letter, #cover {
+  font-size: 25px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #70aaf4;
+}
+
+#letter:hover, #cover:hover {
+  font-size: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #70aaf4;
+}
+
+#letter:visited, #cover:visited {
+  font-size: 25px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #70aaf4;
+}
+
+li {
+  padding: 2px 8px 2px 8px;
+  font-size: 18px;
+  border: navy 2px solid;
+}
+
+li:nth-child(1) {
+  background-color: #434343;
+  font-weight: 600;
+  color: #70aaf4;
+  text-decoration: underline;
+}
+
+li:nth-child(2), .title {
+  background-color: white;
+  font-weight: 600;
+  color: black;
+}
+
+li:nth-child(3), .input {
+  background-color: #70aaf4;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+}
+
+li:nth-child(4), .result {
+  background-color: #e8d81e;
+  font-weight: 600;
+  color: black;
+}
+
+li:nth-child(5) {
+  background-color: #d7d7d7;
+  font-weight: 600;
+  color: black;
+}
+
+.tiles {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+table {
+  border: 1px solid navy;
+  border-collapse: collapse;
+}
+
+.br2pr tr, .pr2br tr, .spread tr, .help tr {
+  text-align: center;
+}
+
+.br2pr td, .pr2br td, .spread td, .help td {
+  border: 2px solid navy;
+  width: 100px;
+  height: 30px;
+}
+
+.help a {
+  text-decoration: none;
+  color: navy;
+  font-weight: 800;
+}
+
+.help a:hover {
+  color: #70aaf4;
+  font-size: 20px;
+}
+
+.help a:visited {
+  text-decoration: none;
+  font-weight: 800;
+}
+
+
+.footer { 
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #f5f5f5;
+  color: #c6c6c6;
+}
+
+.footer div {
+  padding-left: 8px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #c6c6c6;
+}
+
+.footer a:visited {
+  text-decoration: none;
+  color: #c6c6c6;
+}
+*/
