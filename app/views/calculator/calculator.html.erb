@@ -18,7 +18,7 @@
               <th colspan="2" class="subTitle">W2</th>
             </tr>
             <tr>
-              <td class="title"><label for="a">Bill Rate:</label></td>
+              <td class="title"><!--<label for="a">-->Bill Rate:<!--</label>--></td>
               <td><input type="number" name="a" id="a" value="" style="width:100px;" class="input"></td>
             </tr>
             <tr>
@@ -110,10 +110,10 @@
       </div>
     <div class="spread">
       <div>Spread and Markup</div>
-      <form oninput="x.value = parseFloat(( a.value / b.value) - 1 , 10 ).toFixed(2)" action="javascript:void(0)">
+      <form oninput="x.value = parseFloat(( a.value / b.value) - 1 , 10 ).toFixed(2); s.value = parseFloat((a.value*0.9785)-(b.value*1.1875), 10).toFixed(2)" action="javascript:void(0)">
         <table id="mksp">
           <tr>
-              <th colspan="2" class="subTitle">W2 & Subvendor</th>
+              <th colspan="2" class="subTitle">W2</th>
             </tr>
             <tr>
           <tr>
@@ -125,10 +125,36 @@
             <td><input type="number" name="b" id="b" value="" style="width:100px;" class="input"></td>
           </tr>
           <tr>
-            <td colspan="2" class="title">Mark Up %</td>
+            <td class="title">Mark Up %</td>
+            <td class="result"><output name="x" id="x" for="a b"></output></td>
           </tr>
-          <tr class="result">
-            <td colspan="2"><output name="x" id="x" for="a b"></output></td>
+          <tr>
+            <td class="title">Spread</td>
+            <td class="result"><output name="s" id="s" for="a b"></output></td>
+          </tr>
+        </table>
+      </form>
+      <form oninput="x.value = parseFloat(( a.value / b.value) - 1 , 10 ).toFixed(2); s.value = parseFloat((a.value*0.9785)-(b.value*1.0325), 10).toFixed(2)" action="javascript:void(0)">
+        <table id="mksp">
+          <tr>
+              <th colspan="2" class="subTitle">Subvendor</th>
+            </tr>
+            <tr>
+          <tr>
+            <td class="title">Bill Rate:</td>
+            <td><input type="number" name="a" id="a" value="" style="width:100px;" class="input"></td>
+          </tr>
+          <tr>
+            <td class="title">Pay Rate:</td>
+            <td><input type="number" name="b" id="b" value="" style="width:100px;" class="input"></td>
+          </tr>
+          <tr>
+            <td class="title">Mark Up %</td>
+            <td class="result"><output name="x" id="x" for="a b"></output></td>
+          </tr>
+          <tr>
+            <td class="title">Spread</td>
+            <td class="result"><output name="s" id="s" for="a b"></output></td>
           </tr>
         </table>
       </form>
