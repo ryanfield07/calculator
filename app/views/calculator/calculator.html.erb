@@ -12,26 +12,30 @@
   <div class="container-fluid tiles">
     <div class="br2pr">
       <div>Bill Rate to Pay Rate</div>
-        <form oninput="x.value = parseFloat( a.value / 1.32 , 10 ).toFixed(2); y.value = parseInt((a.value/1.32)*2080 , 10 )">
+        <form oninput="x.value = parseFloat( a.value / 1.32 , 10 ).toFixed(2); y.value = parseInt((a.value/1.32)*2080 , 10 ); s.value = parseFloat(( a.value * 0.9785) - ( x.value * 1.1875), 10 ).toFixed(2)" action="javascript:void(0)">
           <table id="br2pr">
             <tr>
               <th colspan="2" class="subTitle">W2</th>
             </tr>
             <tr>
-              <td class="title">Bill Rate:</td>
+              <td class="title"><label for="a">Bill Rate:</label></td>
               <td><input type="number" name="a" id="a" value="" style="width:100px;" class="input"></td>
             </tr>
             <tr>
               <td class="title">Pay Rate</td>
-              <td class="title">Salary</td>
+              <td class="result"><output name="x" id="x" for="a"></output></td>
             </tr>
-            <tr class="result">
-              <td><output name="x" id="x" for="a"></output></td>
-              <td><output name="y" id="y" for="a"></output></td>
+            <tr>
+              <td class="title">Salary</td>
+              <td class="result"><output name="y" id="y" for="a"></output></td>
+            </tr>
+            <tr>
+              <td class="title">Spread</td>
+              <td class="result"><output name="s" id="s" for="a"></output></td>
             </tr>
           </table>
           </form>
-          <form oninput="x.value = parseFloat( a.value / 1.14 , 10 ).toFixed(2); y.value = parseInt((a.value/1.14)*2080 , 10 )">
+          <form oninput="x.value = parseFloat( a.value / 1.14 , 10 ).toFixed(2); y.value = parseInt((a.value/1.14)*2080 , 10 ); s.value = parseFloat(( a.value * 0.9785) - ( x.value * 1.0325), 10 ).toFixed(2)" action="javascript:void(0)">
           <table id="br2pr">
             <tr>
               <th colspan="2" class="subTitle">Subvendor</th>
@@ -42,19 +46,23 @@
             </tr>
             <tr>
               <td class="title">Pay Rate</td>
-              <td class="title">Salary</td>
+              <td class="result"><output name="x" id="x" for="a"></output></td>
             </tr>
-            <tr class="result">
-              <td><output name="x" id="x" for="a"></output></td>
-              <td><output name="y" id="y" for="a"></output></td>
+            <tr>
+              <td class="title">Salary</td>
+              <td class="result"><output name="y" id="y" for="a"></output></td>
+            </tr>
+            <tr>
+              <td class="title">Spread</td>
+              <td class="result"><output name="s" id="s" for="a"></output></td>
             </tr>
           </table>
         </form>
     </div>
     <div class="pr2br">
       <div>Pay Rate to Bill Rate</div>
-      <form oninput="x.value = parseFloat( a.value * 1.32 , 10 ).toFixed(2); y.value = parseInt(a.value*2080 , 10 )">
-        <table id="br2pr">
+      <form oninput="x.value = parseFloat( a.value * 1.32 , 10 ).toFixed(2); y.value = parseInt(a.value*2080 , 10 ); s.value = parseFloat((x.value * 0.9785) - (a.value * 1.1875)).toFixed(2)" action="javascript:void(0)">
+        <table id="pr2br">
           <tr>
             <th colspan="2" class="subTitle">W2</th>
           </tr>
@@ -64,16 +72,20 @@
           </tr>
           <tr>
             <td class="title">Bill Rate</td>
-            <td class="title">Salary</td>
+            <td class="result"><output name="x" id="x" for="a"></output></td>
           </tr>
-          <tr class="result">
-            <td><output name="x" id="x" for="a"></output></td>
-            <td><output name="y" id="y" for="a"></output></td>
+          <tr>
+            <td class="title">Salary</td>
+            <td class="result"><output name="y" id="y" for="a"></output></td>
+          </tr>
+          <tr>
+            <td class="title">Spread</td>
+            <td class="result"><output name="s" id="s" for="a"></output></td>
           </tr>
         </table>
         </form>
-        <form oninput="x.value = parseFloat( a.value * 1.14 , 10 ).toFixed(2); y.value = parseInt(a.value*2080 , 10 )">
-        <table id="br2pr">
+        <form oninput="x.value = parseFloat( a.value * 1.14 , 10 ).toFixed(2); y.value = parseInt(a.value*2080 , 10 ); s.value = parseFloat((x.value * 0.9785) - (a.value * 1.0325)).toFixed(2)" action="javascript:void(0)">
+        <table id="pr2br">
           <tr>
             <th colspan="2" class="subTitle">Subvendor</th>
           </tr>
@@ -83,18 +95,22 @@
           </tr>
           <tr>
             <td class="title">Bill Rate</td>
-            <td class="title">Salary</td>
+            <td class="result"><output name="x" id="x" for="a"></output></td>
           </tr>
-          <tr class="result">
-            <td><output name="x" id="x" for="a"></output></td>
-            <td><output name="y" id="y" for="a"></output></td>
+          <tr>
+            <td class="title">Salary</td>
+            <td class="result"><output name="y" id="y" for="a"></output></td>
+          </tr>
+          <tr>
+            <td class="title">Spread</td>
+            <td class="result"><output name="s" id="s" for="a"></output></td>
           </tr>
         </table>
         </form>
       </div>
     <div class="spread">
       <div>Spread and Markup</div>
-      <form oninput="x.value = parseFloat(( a.value / b.value) - 1 , 10 ).toFixed(2)">
+      <form oninput="x.value = parseFloat(( a.value / b.value) - 1 , 10 ).toFixed(2)" action="javascript:void(0)">
         <table id="mksp">
           <tr>
               <th colspan="2" class="subTitle">W2 & Subvendor</th>
