@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  req: 1
+  firstName: MyString
+  lastName: MyString
+  date: 2016-03-02
+  location: MyString
+  BR: 9.99
+  PR: 9.99
+  status: MyString
+  submitter: MyString
+
+two:
+  req: 1
+  firstName: MyString
+  lastName: MyString
+  date: 2016-03-02
+  location: MyString
+  BR: 9.99
+  PR: 9.99
+  status: MyString
+  submitter: MyString

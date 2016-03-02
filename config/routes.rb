@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :submittals
+
   get 'contact/all'
   
   get 'contact/recruiting'
@@ -10,6 +12,8 @@ Rails.application.routes.draw do
   get 'calculator/calculator'
 
   get 'welcome/index'
+  
+  get 'submittals/index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

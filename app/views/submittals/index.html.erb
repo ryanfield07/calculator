@@ -1,0 +1,47 @@
+
+<div class="container">
+<h1 id="subHead">Submittals</h1>
+<br>
+<span id="subButt"><%= link_to 'New Submittal', new_submittal_path %></span>
+ 
+<div class="container-fluid">
+<table class="subTable">
+  <thead>
+    <tr class="subRow">
+      <th class="subH">Req</th>
+      <th class="subH">First Name</th>
+      <th class="subH">Last Name</th>
+      <th class="subH">Date</th>
+      <th class="subH">Location</th>
+      <!--<th class="subH">Br</th>
+      <th class="subH">Pr</th>-->
+      <th class="subH">Status</th>
+      <th class="subH">Submitter</th>
+      <th colspan="3" class="subH" id="optionH">Options</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @submittals.each do |submittal| %>
+      <tr>
+        <td class="subD"><%= submittal.req %></td>
+        <td class="subD"><%= submittal.firstName.capitalize %></td>
+ 	<td class="subD"><%= submittal.lastName.capitalize %></td>
+        <td class="subD"><%= submittal.date %></td>
+        <td class="subD"><%= submittal.location.capitalize %></td>
+        <!--<td class="subD"><span>$</span><%= submittal.BR %></td>
+        <td class="subD"><span>$</span><%= submittal.PR %></td>-->
+        <td class="subD"><%= submittal.status.capitalize %></td>
+        <td class="subD"><%= submittal.submitter.capitalize %></td>
+        <td class="subD" id="option"><%= link_to 'View More', submittal %></td>
+        <td class="subD" id="option"><%= link_to 'Edit', edit_submittal_path(submittal) %></td>
+        <td class="subD" id="option"><%= link_to 'Delete', submittal, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+  </div>
+   <br>
+<p id="notice"><%= notice %></p>
+</div>
+<br>
