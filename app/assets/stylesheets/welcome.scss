@@ -295,6 +295,12 @@ input {
   border-bottom: 1px solid #ddd;
 }
 
+.subForm:nth-child(even) {background-color: #f2f2f2}
+
+.subForm:hover {
+  background-color: #bababa;
+}
+
 #option {
   text-align: right;
 }

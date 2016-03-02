@@ -23,7 +23,7 @@
 
   <tbody>
     <% @submittals.each do |submittal| %>
-      <tr>
+      <tr class="subForm">
         <td class="subD"><%= submittal.req %></td>
         <td class="subD"><%= submittal.firstName.capitalize %></td>
  	<td class="subD"><%= submittal.lastName.capitalize %></td>
@@ -33,7 +33,7 @@
         <td class="subD"><span>$</span><%= submittal.PR %></td>-->
         <td class="subD"><%= submittal.status.capitalize %></td>
         <td class="subD"><%= submittal.submitter.capitalize %></td>
-        <td class="subD" id="option"><%= link_to 'View More', submittal %></td>
+        <td class="subD" id="option"><%= link_to 'Details', submittal %></td>
         <td class="subD" id="option"><%= link_to 'Edit', edit_submittal_path(submittal) %></td>
         <td class="subD" id="option"><%= link_to 'Delete', submittal, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
