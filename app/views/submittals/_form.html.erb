@@ -1,3 +1,5 @@
+<div class="conainer-fluid formCenter">
+
 <%= form_for(@submittal) do |f| %>
   <% if @submittal.errors.any? %>
     <div id="error_explanation">
@@ -10,44 +12,46 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= f.label :req %><br>
-    <%= f.number_field :req %>
-  </div>
-  <div class="field">
-    <%= f.label :firstName %><br>
-    <%= f.text_field :firstName %>
-  </div>
-  <div class="field">
-    <%= f.label :lastName %><br>
-    <%= f.text_field :lastName %>
-  </div>
-  <div class="field">
-    <%= f.label :date %><br>
-    <%= f.date_select :date %>
-  </div>
-  <div class="field">
-    <%= f.label :location %><br>
-    <%= f.text_field :location %>
-  </div>
-  <!--<div class="field">
-    <%= f.label :BR %><br>
-    <%= f.text_field :BR %>
-  </div>
-  <div class="field">
-    <%= f.label :PR %><br>
-    <%= f.text_field :PR %>
-  </div>-->
-  <div class="field">
-    <%= f.label :status %><br>
-    <%= f.text_field :status %>
-  </div>
-  <div class="field">
-    <%= f.label :submitter %><br>
-    <%= f.text_field :submitter %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+</div>
+<div class="container-fluid showDiv">
+  <table class="subFormInput">
+    <tr class="subFormRow">
+      <td class="subFormDs" colspan="2"><%= f.label :req %></td>
+    </tr>
+    <tr class="subFormRow">
+      <td class="subFormDs" colspan="2"><%= f.number_field :req, :size => 5, :maxlength => 5 %></td>
+    </tr>
+    <tr class="subFormRow">
+      <td class="subFormTitles"><%= f.label :firstName %></td>
+      <td class="subFormTitles"><%= f.label :lastName %></td>
+    </tr>
+    <tr class="subFormRow">
+      <td class="subFormDs"><%= f.text_field :firstName %></td>
+      <td class="subFormDs"><%= f.text_field :lastName %></td>
+    </tr>
+    <tr class="subFormRow">
+      <td class="subFormTitles"><%= f.label :date %><br></td>
+      <td class="subFormTitles"><%= f.label :location %></td>
+    </tr>
+    <tr class="subFormRow">
+      <td class="subFormDs"><%= f.date_select :date %><br></td>
+      <td class="subFormDs"><%= f.text_field :location %></td>
+    </tr>
+    <tr class="subFormRow">
+      <td class="subFormTitles"><%= f.label :submitter %><br></td>
+      <td class="subFormTitles"><%= f.label :status %></td>
+    </tr>
+    <tr class="subFormRow">
+      <td class="subFormDs"><%= f.text_field :submitter %><br></td>
+      <td class="subFormDs"><%= f.text_field :status %></td>
+    </tr>
+    <tr class="subFormRow">
+      <td class="subFormDs subFormButton" id="turnBlack" colspan="2"><%= f.submit %></td>
+    </tr>
+    <tr class="subFormRow subFormRowBack">
+      <td colspan="2" class="subFormBackTd"><a class="subFormBackA" href="/submittals">Back</a></td>
+    </tr>
+  </table>
+  
+</div>
 <% end %>

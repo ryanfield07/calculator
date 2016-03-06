@@ -25,6 +25,9 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  
+  <script src="/calculator/app/assets/javascripts/sortable.js"></script>
+  
 </head>
 <body>
 <!--Nav Bar-->
@@ -34,20 +37,6 @@
         <a type="button" class="btn" href="../welcome/index">HOME</a>
         <a type="button" class="btn" href="../calculator/calculator">Calculator</a>
         <a type="button" class="btn" href="../submittals"> Submittals</a>
-        <div class="btn-group">
-            <button type="button" data-toggle="dropdown" class="btn dropdown-toggle">Links <span class="caret"></span></button>
-            <ul class="dropdown-menu">
-                <li><a href="http://fox.experis.us/faux/Faux.html#xp/viewFoxHome" target="_blank">FOX</a></li>
-                <li><a href="https://www.fieldglass.net" target="_blank">Fieldglass</a></li>
-                <li class="divider"></li>
-                <li><a href="https://intranetapps.manpower.com/JobBoardSSO/MonsterSSO" target="_blank">Monster</a></li>
-                <li><a href="http://www.indeed.com/resumes?isid=find-resumes&ikw=hometop&co=US&hl=en" target="_blank">Indeed</a></li>
-                <li><a href="https://employer.dice.com/daf/servlet/DAFctrl?op=1145&login=1" target="_blank">Dice</a></li>
-                <li class="divider"></li>
-                <li><a href="https://www.google.com" target="_blank">Google</a></li>
-                <li><a href="https://www.wikipedia.com" target="_blank">Wikipedia</a></li>
-            </ul>
-        </div>
         <div class="btn-group">
             <button type="button" data-toggle="dropdown" class="btn dropdown-toggle">Contact<span class="caret"></span></button>
             <ul class="dropdown-menu">
@@ -67,7 +56,7 @@
   </nav>
   
   <!--Experis AIG Team-->
-  <div class="container-fluid">
+  <div class="container-fluid titleDiv">
     <div class="experis">
       <span id="experis">Experis</span>
       <span id="title">AIG</span>
@@ -75,7 +64,7 @@
     </div>
   </div>
   
-  <div class="container-fluid">
+  <div class="container-fluid yieldContainer">
     <%= yield %>
   </div>
   

@@ -1,20 +1,20 @@
 <p id="notice"><%= notice %></p>
 
-<div class="container-fluid showClass">
-  <table id="showTable">
+<div class="container-fluid showDiv">
+  <table class="showTable">
     <tr class="showRow">
-      <th colspan="2" class="showH"><%= @submittal.firstName.capitalize %> <%= @submittal.lastName.capitalize %></th>
+      <td colspan="2" class="showD"><%= @submittal.firstName.capitalize %> <%= @submittal.lastName.capitalize %></td>
     </tr>
     <tr class="showRow">
       <td class="showD">Req: CSPJP000<%= @submittal.req %></td>
-      <td class="showD1">Date: <%= @submittal.date %></td>
+      <td class="showD">Date: <%= @submittal.date %></td>
     </tr>
     <tr class="showRow">
-      <td class="showD">Location: <%= @submittal.location.capitalize %></td>
-      <td class="showD1">Status: <%= @submittal.status.capitalize.capitalize %></td>
+      <td class="showD">Location: <%= @submittal.location.upcase %></td>
+      <td class="showD">Status: <%= @submittal.status.capitalize.capitalize %></td>
     </tr>
     <tr class="showRow">
-      <td colspan="2" class="showD2">Submitted By: <%= @submittal.submitter.capitalize %></td>
+      <td colspan="2" class="showD">Submitted By: <%= @submittal.submitter.capitalize %></td>
     </tr>
     <tr class="optionsShow">
       <td class="optionsD"><%= link_to 'Edit', edit_submittal_path(@submittal) %></td>

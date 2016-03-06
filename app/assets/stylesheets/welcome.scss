@@ -11,7 +11,7 @@
 
 #experis {
   font-size: 70px;
-  color: orange;
+  color: #959595;
   padding: 0px 20px 0px 20px;
 }
 
@@ -33,10 +33,12 @@
   border-bottom: 2px solid #70aaf4;
 }
 
+
+
 .nav .btn {
   text-decoration: none;
   background-color: white;
-  color: orange;
+  color: #959595;
   border: 2px solid #70aaf4;
   font-weight: 600;
 }
@@ -44,7 +46,7 @@
 .nav .btn:hover,  {
   text-decoration: none;
   background-color: white;
-  color: orange;
+  color: #959595;
   border: 2px solid #70aaf4;
   font-weight: 600;
 }
@@ -52,7 +54,7 @@
 .nav .btn:visited {
   text-decoration: none;
   background-color: white;
-  color: orange;
+  color: #959595;
   border: 2px solid #70aaf4;
   font-weight: 600;
 }
@@ -60,7 +62,7 @@
 #act {
   background-color: none;
   color: #70aaf4;
-  border: 2px solid orange;
+  border: 2px solid #959595;
   font-weight: 600;
   font-size: 120%;
 }
@@ -80,7 +82,7 @@ ul.dropdown-menu li a {
 }
 
 ul.dropdown-menu li a:hover {
-  color: orange;
+  color: #959595;
 }
 
 .clock {
@@ -88,38 +90,170 @@ ul.dropdown-menu li a:hover {
   margin-top: -40px;
 }
 
+
+/*Welcome Sidebar*/
+
+.welcomeSide {
+  text-align: center;
+}
+
+.sideBarMenu {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  width: 200px;
+  background-color: #959595;
+  border: 2px solid black;
+  border-radius: 15px;
+}
+
+.sideBarHead {
+  list-style-type: none;
+  margin-top: 20px;
+  padding: 0px;
+  width: 200px;
+  background-color: #f1f1f1;
+}
+
+#sideBarLi1 {
+  font-size: 25px;
+  padding: 5px 5px 10px 5px;
+  color: #70aaf4;
+  font-weight: 600;
+  background-color: white;
+}
+
+.sideBarLi {
+  color: black;
+  width: 100%;
+  border-bottom: 2px solid #70aaf4;
+}
+.sideBarLinks {
+  font-size: 20px;
+  display: block;
+  color: #000;
+  padding: 8px 0 8px 16px;
+  text-decoration: none;
+}
+
+.sideBarLinks:hover {
+  font-size: 20px;
+  display: block;
+  background-color: #70aaf4;
+  color: #70aaf4;
+  text-decoration: none;
+  border: 2px solid #959595;
+}
+
+.sideBarLinks:visited {
+  font-size: 20px;
+  display: block;
+  color: #000;
+  padding: 8px 0 8px 16px;
+  text-decoration: none;
+}
+
+.sideBarTop:hover {
+  font-size: 20px;
+  display: block;
+  background-color: #70aaf4;
+  color: #70aaf4;
+  text-decoration: none;
+  border: 2px 2px 0px 2px solid #959595;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  padding-top: 2px;
+}
+
+.sideBarBot {
+  border-bottom: none;
+}
+
+.sideBarBot:hover {
+  font-size: 20px;
+  display: block;
+  background-color: #70aaf4;
+  color: #70aaf4;
+  text-decoration: none;
+  border: 2px solid #959595;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
 /*Submittal Requirements*/
+
+.welcomeTable {
+}
 
 .submit {
   display: flex;
-  justify-content: center;
   margin-top: 20px;
 }
 
 .submittals th {
   text-align: center;
   color: #70aaf4;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 600;
 }
 
-.submittals .sub1 {
-  color: orange;
-  font-size: 18px;
-  font-weight: 600;
+.submittals th, .submittals td {
+  padding: 8px 2px 6px 2px;
+  border-bottom: 1px solid #c1c1c1;
 }
 
-.submittals .sub2 {
-  color: orange;
-  font-size: 15px;
+.sub1 {
+  color: #959595;
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+  padding-right: 10px;
+}
+
+.sub2 {
+  color: #959595;
+  font-size: 22px;
   font-weight: 400;
 }
 
-.submittals .sub3 {
-  color: orange;
-  font-size: 15px;
+.sub3 {
+  color: #959595;
+  font-size: 22px;
   font-weight: 400;
   text-align: center;
+}
+
+.sub4 {
+  color: #959595;
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+  padding: 0px 10px 0px 10px;
+}
+
+.sub5 {
+  color: #959595;
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+  padding: 0px 10px 0px 10px;
+}
+
+.subMarkUp {
+  
+}
+
+
+#sub3 {
+  border-bottom: 1px solid black
+}
+
+#subTableHead {
+  border-bottom: 1px solid black;
+}
+
+.tableTopper {
+  margin-top: 50px;
 }
 
 /*Calculator Main*/
@@ -157,7 +291,7 @@ ul.dropdown-menu li a:hover {
 }
 
 .key li:nth-child(4) {
-  background-color: #ffa500;
+  background-color: #959595;
   font-weight: 600;
   color: #000;
   text-decoration: none;
@@ -185,7 +319,7 @@ label {
 }
 
 .tiles .result {
-  background-color: orange;
+  background-color: #959595;
   color: #000;
   text-decoration: none;
   font-weight: 600;
@@ -208,7 +342,7 @@ label {
   text-align: center;
   font-size: 25px;
   color: #000;
-  border-bottom: 2px solid orange;
+  border-bottom: 2px solid #959595;
 }
 
 .br2pr table, .pr2br table, .spread table {
@@ -243,7 +377,7 @@ input {
 
 
 .contact table th {
-  color: orange;
+  color: #959595;
   font-size: 18px;
 }
 
@@ -260,33 +394,64 @@ input {
 
 /*Submittal index*/
 
-#subButt {
+.subScroll {
+  
+  margin-top: 30px;
+  width: 1175px; 
+  height: 400px; 
+  overflow-y: scroll;
+  
+  
+}
+
+.subBod {
+  width: 1175px; 
+  height: 400px; 
+  overflow-y: scroll;
+  
+  
+}
+
+#subButt, #subButt:visited {
   border: 2px solid #70aaf4;
   border-radius: 15px;
   padding: 5px;
   background-color: lightgrey;
   color: black;
   font-weight: 600;
+  text-decoration: none;
 }
 
-#subHead {
-  color: orange;
+#subButt:hover {
+  color: #70aaf4;
+  background-color: black;
+  text-decoration: inherit;
+}
+
+.subHead {
+  color: #959595;
 }
 
 .subTable {
   width: 100%;
-  margin-top: 15px;
+  margin-top: 0px;
 }
 
 .subH {
   color: #70aaf4;
   font-size: 17px;
-}
-
-.subH {
   padding: 5px 2px 5px 2px;
   text-align: left;
   border-bottom: 1px solid black;
+}
+
+.subH:hover {
+  color: #70aaf4;
+  font-size: 17px;
+  padding: 5px 2px 5px 2px;
+  text-align: left;
+  border-bottom: 1px solid black;
+  cursor: pointer;
 }
 
 .subD {
@@ -295,14 +460,26 @@ input {
   border-bottom: 1px solid #ddd;
 }
 
-.subForm:nth-child(even) {background-color: #f2f2f2}
+.subForm:nth-child(even) {
+  background-color: #f2f2f2;
+}
 
 .subForm:hover {
-  background-color: #bababa;
+  background-color: #959595;
+}
+
+.subForm:hover .subD {
+  color: black;
 }
 
 #option {
   text-align: right;
+}
+
+#option a {
+  text-decoration: none;
+  color: black;
+  background-color: inherit;
 }
 
 #optionH {
@@ -310,51 +487,86 @@ input {
 }
 
 
+/*Submittal _Form*/
+
+.subFormInput {
+  text-align: center;
+}
+
+.subFormTitles {
+  padding: 8px 10px 0px 10px;
+}
+
+.subFormDs {
+  padding: 0px 10px 8px 10px;
+}
+
+.subFormDs label, .subFormTitles label {
+  font-size: 20px;
+  color: #70aaf4;
+}
+
+.subFormDs input, .subFormTitles input {
+  border: 1px solid black;
+  border-radius: 15px;
+  width: 200px;
+  height: 30px;
+  font-size: 18px;
+}
+
+.subFormButton {
+  padding: 15px 0px 15px 0px;
+}
+
+.subFormButton input {
+  color: black;
+  background-color: #959595;
+}
+
+.subFormBackA, .subFormBackA:hover, .subFormBackA:visited {
+  border: 1px solid black;
+  border-radius: 15px;
+  background-color: #959595;
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 3px 78px 3px 78px;
+}
+
+
 /*Submittal show*/
 
-.showClass {
-  
+.showDiv {
+  display: flex;
+  justify-content: center;
 }
 
 .showTable {
-  margin-left: 30px;
-}
-
-.showH {
-  font-size: 35px;
-  padding: 15px;
   text-align: center;
-  border-bottom: 2px solid #70aaf4;
 }
 
-.showD {
-  font-size: 30px;
-  padding: 15px;
-  border-bottom: 2px solid #70aaf4;
+.showRow {
+
 }
 
-.showD1 {
-  font-size: 30px;
-  padding: 15px;
-  border-left: 2px solid #70aaf4;
-  border-bottom: 2px solid #70aaf4;
-}
-
-.showD2 {
-  text-align: center;
-  font-size: 30px;
-  padding: 15px;
-  border-bottom: 2px solid #70aaf4;
-}
-
-.optionsShow {
-  
+td.showD {
+  border: 2px solid black;
+  padding: 10px;
+  background-color: #959595;
 }
 
 .optionsD {
   font-size: 20px;
   text-align: center;
   padding-top: 10px;
+  color: #959595;
+  text-decoration: none;
+}
+
+.optionsD a:hover {
+  text-decoration: inherit;
+  background-color: inherit;
+  color: inherit;
 }
 
 /*Footer*/
@@ -383,3 +595,25 @@ input {
   text-decoration: none;
   color: #c6c6c6;
 }
+
+.yieldContainer h1, .yieldContainer a {
+  text-align: center;
+}
+
+.formCenter {
+  display: flex;
+  justify-content: center;
+}
+
+.formCenter a {
+  text-align: center;
+}
+
+/*Sortable
+
+table.sortable thead {
+    background-color:#eee;
+    color:#666666;
+    font-weight: bold;
+    cursor: default;
+}*/

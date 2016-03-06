@@ -10,7 +10,7 @@ class SubmittalsController < ApplicationController
   # GET /submittals/1
   # GET /submittals/1.json
   def show
-  end
+end
 
   # GET /submittals/new
   def new
